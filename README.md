@@ -35,7 +35,7 @@ Its evolution in successive generations is determined solely by the initial conf
 and does not require any subsequent data entry.
 
 ```diff
-@The operation of the main program is as follows:@
+@@The operation of the main program is as follows:@@
 ```
 
 It receives the following arguments via command line:
