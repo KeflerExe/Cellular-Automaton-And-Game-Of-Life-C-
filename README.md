@@ -22,9 +22,9 @@ We can describe the game of life with the following components:
 
 The original version of the game uses the transition rule denoted as “23/3”, which consists of:
 
-&emsp;&emsp;○ A cell in the “alive” state with 2 or 3 neighboring cells in the “alive” state continues in a "living" state in the next generation. Otherwise it goes to the "dead" state.
+&emsp;&emsp;○ A cell in the “alive” state with 2 or 3 neighboring cells in the “alive” state continues in a "living" state in the next generation, otherwise it goes to the "dead" state.
 
-&emsp;&emsp;○ A cell in the “dead” state with exactly 3 neighboring cells in the “dead” state "alive" passes to the state "alive" in the next generation. Otherwise it remains in a "dead" state.
+&emsp;&emsp;○ A cell in the “dead” state with exactly 3 neighboring cells in the “dead” state "alive" passes to the state "alive" in the next generation, otherwise it remains in a "dead" state.
 
 &emsp;● Boundary conditions: ​​open borders, periodic borders, reflective borders and no borders.
 
