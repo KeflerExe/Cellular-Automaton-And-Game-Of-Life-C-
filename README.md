@@ -60,8 +60,8 @@ entered by keyboard:
 
 **'c':** The 'n' and 'L' commands stop displaying the board status and only display
 the population, that is, the number of cells in a "living" state
-**
-'s':** Save the board to a file
+
+**'s':** Save the board to a file
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
