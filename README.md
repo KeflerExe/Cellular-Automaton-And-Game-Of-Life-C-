@@ -26,7 +26,7 @@ The original version of the game uses the transition rule denoted as “23/3”,
 
 &emsp;&emsp;○ A cell in the “dead” state with exactly 3 neighboring cells in the “dead” state "alive" passes to the state "alive" in the next generation. Otherwise it remains in a "dead" state.
 
-&emsp;● Boundary conditions, in addition to those described in previous practice: ​​boundary open, periodic boundary and reflective boundary; a new type of condition is included called “Without borders”.
+&emsp;● Boundary conditions: ​​open borders, periodic borders, reflective borders and no borders.
 
 &emsp;&emsp;○ A crosshair is defined that changes size dynamically every time some cell with a “live” state on the edge needs to interact with its neighbors.
 
