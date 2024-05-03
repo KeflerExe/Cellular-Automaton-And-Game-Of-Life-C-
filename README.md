@@ -100,8 +100,6 @@ g++ cell.cc lattice.cc main_automata.cc
 ```
 4. All ready!
 
-(You can find instructions about the arguments of the program inside the bigint_func.cc file.)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
