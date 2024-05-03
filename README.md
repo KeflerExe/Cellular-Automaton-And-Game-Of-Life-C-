@@ -40,10 +40,10 @@ and does not require any subsequent data entry.
 
 It receives the following arguments via command line:
 
--size <M> <N>, M is the number of rows and N is the number of columns in the
+&emsp;● size <M> <N>, M is the number of rows and N is the number of columns in the
 board.
 
--init <file>, (optional) file is a name of the file that contains the values
+&emsp;● init <file>, (optional) file is a name of the file that contains the values
 initials for the state of the board cells.
 
 Performs the evaluation in generations of the game, showing in each generation the
@@ -52,16 +52,16 @@ board per screen.
 The user controls the simulation with the following commands
 entered by keyboard:
 
-'x' : Ends the execution of the program
+**'x' :** Ends the execution of the program
 
-'n' : Calculates and displays the next generation
+**'n' :** Calculates and displays the next generation
 
-'L' : Calculates and displays the next five generations
+**'L' :** Calculates and displays the next five generations
 
-'c': The 'n' and 'L' commands stop displaying the board status and only display
+**'c':** The 'n' and 'L' commands stop displaying the board status and only display
 the population, that is, the number of cells in a "living" state
-
-'s': Save the board to a file
+**
+'s':** Save the board to a file
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
