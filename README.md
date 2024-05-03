@@ -5,19 +5,55 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+This program developed in C++ implements the game of life by John Horton by using cellular automatons.
 
-In different fields of science there is a need to work with very big, or very small  numerical values.
-With this program im implementing data types in C++ to handle 
-very large numeric values, exceeding the representation range of the defined data types
-in standard language. To do this, the generic data type BigInt<size_t Base> is defined
-which represents integers using positional notation. In this numbering system, the value of a digit depends on its relative position and the base, which determines the number of
-digits needed to write any number. By default, the decimal system will be used
-(base 10), although it is also common to use the binary (base 2), octal (base 8) and hexadecimal (base 16).
+The game of life is an example of a cellular automaton designed by the British mathematician
+John Horton Conway in 1970. 
 
-The representation range of the BigInt<size_t Base> data type encompasses any integer, positive or negative, that can be stored in machine memory.
-That is, the maximum range is limited by the maximum size that the system allows for the data structure where the digits are stored.
+We can describe the game of life with the following components:
 
-Using the BigInt<Base> data type, the program implements a calculator for expressions in inverse Polish notation.
+&emsp;● The cellular space is defined by a two-dimensional lattice, a board where each box is a cell.
+
+&emsp;● The alphabet contains two possible states for each cell: "alive" or "dead."
+
+&emsp;● The neighborhood, called Moore neighborhood, is constituted for each cell by its eight adjacent cells on the board.
+
+&emsp;● The local transition function, which each cell applies to calculate its state in the next generation, depends on its current state and the number of cells with been "alive" in its vicinity. 
+
+The original version of the game uses the transition rule denoted as “23/3”, which consists of:
+
+&emsp;&emsp;○ A cell in the “alive” state with 2 or 3 neighboring cells in the “alive” state continues in a "living" state in the next generation. Otherwise it goes to the "dead" state.
+
+&emsp;&emsp;○ A cell in the “dead” state with exactly 3 neighboring cells in the “dead” state "alive" passes to the state "alive" in the next generation. Otherwise it remains in a "dead" state.
+
+&emsp;● Boundary conditions, in addition to those described in previous practice: ​​boundary open, periodic boundary and reflective boundary; a new type of condition is included called “Without borders”.
+
+&emsp;&emsp;○ A crosshair is defined that changes size dynamically every time some cell with a “live” state on the edge needs to interact with its neighbors.
+
+The game of life belongs to the category of zero-player game, which means that
+Its evolution in successive generations is determined solely by the initial configuration,
+and does not require any subsequent data entry.
+
+
+The operation of the main program is as follows:
+
+It receives the following arguments via command line:
+
+-size <M> <N>, M is the number of rows and N is the number of columns in the
+board.
+
+-init <file>, (optional) file is a name of the file that contains the values
+initials for the state of the board cells.
+
+Performs the evaluation in generations of the game, showing in each generation the
+board per screen. The user controls the simulation with the following commands
+entered by keyboard:
+'x' : Ends the execution of the program
+'n' : Calculates and displays the next generation
+'L' : Calculates and displays the next five generations
+'c': The 'n' and 'L' commands stop displaying the board status and only display
+the population, that is, the number of cells in a "living" state
+'s': Save the board to a file
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -52,7 +88,7 @@ No installation required :)
 1. Download the files
 2. Compile with g++
 ```
-g++ bigint_main.cc bigint_func.cc
+g++ cell.cc lattice.cc main_automata.cc
 ```
 4. All ready!
 
