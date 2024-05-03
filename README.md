@@ -34,8 +34,9 @@ The game of life belongs to the category of zero-player game, which means that
 Its evolution in successive generations is determined solely by the initial configuration,
 and does not require any subsequent data entry.
 
-
+```diff
 **The operation of the main program is as follows:**
+```
 
 It receives the following arguments via command line:
 
